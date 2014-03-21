@@ -159,6 +159,20 @@ hr {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  .game-container .greeting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-size: 80px;
+    text-align: center;
+    line-height: 500px;
+    z-index: 100;
+    color: #E6D837; }
+    .game-container .greeting.show {
+    display: block; }
   .game-container .game-message {
     display: none;
     position: absolute;

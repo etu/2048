@@ -153,6 +153,16 @@ GameManager.prototype.move = function (direction) {
   });
 
   if (moved) {
+    if ((Math.floor(Math.random() * (100 - 1 + 1)) + 1) > 85) {
+      var greeting = document.getElementsByClassName('greeting')[0];
+
+      window.setTimeout((function () {
+        document.getElementsByClassName('greeting')[0].className = 'greeting';
+      }), 350);
+
+      greeting.className += ' show';
+    }
+
     this.addRandomTile();
 
     if (!this.movesAvailable()) {
